@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Bug Zapper</title>
+</head>
+<body>
+    <form id="submission">
+        <input id="newBugTitle" type="text" placeholder="Title">
+        <textarea id="newBugDesc"   placeholder="Description of bug"></textarea>
+        <button class="addBug" type="button">Submit</button>
+    </form>
+
+    <section id="currentBug">
+        <p> Current Job</p>
+        <p class="bugTitle"></p>
+        <p class="bugDescription"></p>
+        <button type="button" id="resolve">Mark Resolved</button>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

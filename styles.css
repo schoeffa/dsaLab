@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bitter Regular'), local('Bitter-Regular'), url(https://fonts.gstatic.com/s/bitter/v13/rax8HiqOu8IVPmn7f4xp.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url("images/pexels-photo-1149665.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -300px;
+}
+
+#currentBug p {
+    color: rgb(247, 246, 225);
+    font-family: 'Bitter';
+}
+#submission, #currentBug {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(104, 157, 188, 0.5);
+    border-radius: 20px;
+    width: 40%;
+    height: 50%;
+    box-shadow: 10px 10px 10px 5px rgba(106, 90, 205, 0.3);
+}
+
+::placeholder {
+    color: rgb(247, 246, 225);
+}
+
+input, textarea, .bugTitle, .bugDescription {
+    font-family: "Bitter";
+    font-size: 18px;
+    background-color: rgba(23, 35, 25, 0.5);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px 20px;
+    padding: 10px;
+    width: 80%;
+    color: rgb(247, 246, 225);
+}
+
+input {
+    margin-top: 20px;
+}
+
+textarea {
+    height: 50%;
+}
+
+.addBug, #resolve {
+    background-color: rgba(104, 157, 188);
+    font-family: "Bitter";
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 20px;
+    width: 40%;
+    height: 35px;
+    padding: 10px;
+}
+
+#currentBug {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bugDescription {
+    height: 50%;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    body {
+        background-image: none;
+        background-color: #172319;
+    }
+
+    #submission, #currentBug {
+        width: 90%;
+
+    }
+}
